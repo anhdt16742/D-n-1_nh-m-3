@@ -11,14 +11,15 @@ package Models;
  */
 public class SanPham {
 
-    String maSP, maLoai, maChatlieu, XuatXu, maMauSac, tenSP, size;
+    String maSP, maLoai, maChatlieu,anh, XuatXu, maMauSac, tenSP, size;
     int soLuong, giaban;
     float trongLuong;
 
-    public SanPham(String maSP, String maLoai, String maChatlieu, String XuatXu, String maMauSac, String tenSP, String size, int soLuong, int giaban, float trongLuong) {
+    public SanPham(String maSP, String maLoai, String maChatlieu,String anh, String XuatXu, String maMauSac, String tenSP, String size, int soLuong, int giaban, float trongLuong) {
         this.maSP = maSP;
         this.maLoai = maLoai;
         this.maChatlieu = maChatlieu;
+        this.anh = anh;
         this.XuatXu = XuatXu;
         this.maMauSac = maMauSac;
         this.tenSP = tenSP;
@@ -50,9 +51,16 @@ public class SanPham {
     public String getMaChatlieu() {
         return maChatlieu;
     }
+    
 
     public void setMaChatlieu(String maChatlieu) {
         this.maChatlieu = maChatlieu;
+    }
+    public String getAnh(){
+        return anh;
+    }
+    public void setAnh(String anh){
+        this.anh = anh;
     }
 
     public String getXuatXu() {
